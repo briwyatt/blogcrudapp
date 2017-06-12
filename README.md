@@ -1,4 +1,4 @@
-# Django CRUD Example Apps
+# Django CRUD Blog App
 
 This is a small Django project to demonstrate Django CRUD functionality, it
 consist of 1 small application:
