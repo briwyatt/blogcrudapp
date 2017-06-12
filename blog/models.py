@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 
 class Blog(models.Model):
     name = models.CharField(max_length=200)
-    pages = models.IntegerField()
+    post = models.CharField(max_length=20000)
 
     def __unicode__(self):
         return self.name

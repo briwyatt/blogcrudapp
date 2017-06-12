@@ -1,0 +1,11 @@
+<h1>Bri's Blog</h1>
+<ul>
+    {% for blog in object_list %}
+    <li>{{ blog.name }}  ({{ blog.pages }} Blog Post)
+    <a href="{% url 'blog:blog_edit' blog.id %}">edit</a>
+    <a href="{% url 'blog:blog_delete' blog.id %}">delete</a>
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'blog:blog_new' %}">New</a>

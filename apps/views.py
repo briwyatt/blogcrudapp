@@ -7,3 +7,6 @@ def home(request):
     <a href="/blog/">This is my Blog!!!!</a><br>
     """
     return HttpResponse(html)
+
+
+    

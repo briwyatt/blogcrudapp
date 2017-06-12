@@ -10,14 +10,14 @@ class BlogList(ListView):
 
 class BlogCreate(CreateView):
     model = Blog
-    fields = ['name', 'pages']
-    success_url = reverse_lazy('blog:list')
+    fields = ['name', 'post']
+    success_url = reverse_lazy('blog:blog_list')
 
 class BlogUpdate(UpdateView):
     model = Blog
-    fields = ['name', 'pages']
-    success_url = reverse_lazy('blog:list')
+    fields = ['name', 'post']
+    success_url = reverse_lazy('blog:blog_list')
 
 class BlogDelete(DeleteView):
     model = Blog
-    success_url = reverse_lazy('blog:list')
+    success_url = reverse_lazy('blog:blog_list')
